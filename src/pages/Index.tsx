@@ -90,7 +90,7 @@ const Index = () => {
       </div>
 
       {/* Bottom Navigation */}
-      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-card/95 backdrop-blur-md border-t border-border">
+      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-card/95 backdrop-blur-md border-t border-border shadow-lg">
         <div className="flex items-center justify-around py-2 pb-6">
           {[
             { icon: "🏠", label: "Home", active: true },
