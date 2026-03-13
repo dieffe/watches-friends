@@ -31,7 +31,7 @@ const Index = () => {
       <header className="px-5 pb-4">
         <div className="flex items-center justify-between mb-5">
           <div>
-            <h1 className="font-display text-xl font-semibold tracking-wide text-slate-700">
+            <h1 className="font-display text-xl font-semibold tracking-wide text-foreground">
               Watches<span className="text-primary">&</span>Friends
             </h1>
           </div>
