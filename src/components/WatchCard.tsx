@@ -1,26 +1,21 @@
 import { Heart } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-interface Watch {
-  id: number;
-  brand: string;
-  model: string;
-  price: string;
-  year: number;
-  image: string;
-  condition: string;
-}
+import type { WatchListing } from "@/data/watches";
 
 interface WatchCardProps {
-  watch: Watch;
+  watch: WatchListing;
   index: number;
 }
 
 const WatchCard = ({ watch, index }: WatchCardProps) => {
   const [liked, setLiked] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div
+      onClick={() => navigate(`/listing/${watch.id}`)}
       className="animate-fade-in rounded-xl overflow-hidden bg-card group cursor-pointer"
       style={{ animationDelay: `${index * 80}ms` }}
     >
